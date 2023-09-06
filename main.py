@@ -1,6 +1,7 @@
 import sources.logins as lg
 import sources.databases as db
 import sources.reports as rp
+import sources.new_web as nw
 import os
 
 from sqlite3 import connect
@@ -10,9 +11,10 @@ from IPython.display import display
 #  pyinstaller -i neverstop.ico -n Endocare --onefile main.py
 
 global conn, driver,db_name,ver,uname
-ver = '1.1.6'
+ver = '1.2.7'
 db_name =''
 uname =''
+
 
 print (f'{"-"*17}Endo Care v{ver}{"-"*17}')
 
@@ -48,10 +50,39 @@ class chel():
 		print(f'|{"_"*48}|') #bottom border
 		while True:
 			ind = str(input('Select Function by Index: '))
+			web_key = ['noisoifujifilm',
+						'website',
+						'noisoi',
+						'endo',
+						'endocare',
+
+					]
 			try:
 				ind = int(ind)
 			except:
 				if ind.upper() == 'Q' or ind.upper() == 'QUIT':
+					break
+				elif ind.lower() in web_key:
+					print('Add data to website: noisoifujifilm.vn')
+					try:
+						if conn:
+							pass
+					except:
+						conn = connect('history.db')
+						print('Auto connect to history.db')
+					run_all = nw.data_process(conn)
+					run_all.rma_list()
+					run_all.exfm_web()
+					run_all.pending_file()
+					run_all.parts_name()
+					run_all.r_code()
+					# try:
+					# 	run_all.export_files()
+					# except Exception as e:
+						# print(e)
+					run_all.export_csv()
+					import sources.auto_import
+
 					break
 				else:
 					print('Only accept number')
@@ -77,10 +108,16 @@ class chel():
 			functions().run_sql()
 
 		if function == 'GDKT/Trouble Report':
-			rp.main(conn)
+			try:
+				rp.main(conn)
+			except Exception as e:
+				print(e,'\nSelect Database (Step 2 first)')
 		
 		if function == 'Quotation':
-			rp.quotation(conn)
+			try:
+				rp.quotation(conn)
+			except Exception as e:
+				print(e,'\nSelect Database (Step 2 first)')
 
 		if function == menu_list[-1]:
 			pass
@@ -93,31 +130,39 @@ class chel():
 
 class functions():
 	def __init__(self):
-		
-		self.d_type_menu = [
-						'Incompleted',
-						'History',
-						'Equipments',
-						'Customers',
-						]
-
+		# pass
+		# self.d_type_menu = [
+		# 				'Incompleted',
+		# 				'History',
+		# 				'Equipments',
+		# 				'Customers',
+		# 				'Do not download',
+		# 				]
+		self.uname = uname
 
 	def DownloadExFM(self):
-		
 		# check driver
-		driver = lg.check_driver()
+		global driver
 		try:
-			driver.close()
-		except Exception as e:
-			pass
+			driver_bk = driver
+			driver,d_type = lg.login_exfm(uname = self.uname,driver = driver_bk)
+		except:
+			driver,d_type = lg.login_exfm(uname = self.uname,driver='')
 
-		d_type_menu = self.d_type_menu
+		# driver = lg.check_driver()
+		# try:
+		# 	driver.close()
+		# except Exception as e:
+		# 	pass
+
+		# d_type_menu = self.d_type_menu
 
 		
-		driver,d_type = lg.login_exfm()
+		
+		if driver =='':
+			driver = driver_bk
 		uname = driver.find_element_by_xpath('//*[@id="username"]').get_attribute('innerHTML')
-
-
+		
 		# Rename for Download All
 		if d_type.lower() =='history':
 			folder_name = 'Downloads'

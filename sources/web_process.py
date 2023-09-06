@@ -12,7 +12,7 @@ def auto_import_data_tb(driver,web_link,table_name,file_name):
 		'pending_tb':'/admin/home/pending/import',
 		'comment_tb':'/admin/whiteboard/comment/import',
 	}
-	ext = 'xls'
+	ext = 'csv'
 	# file =lg.file_select('.'+ext,'exports')
 	file = file_name[table_name]
 
@@ -28,7 +28,7 @@ def auto_import_data_tb(driver,web_link,table_name,file_name):
 	print(messages)
 
 
-def import_data_tb(driver,web_link,table_name,file_type='xls'):
+def import_data_tb(driver,web_link,table_name,file_type='csv'):
 	table_dict={
 		'exfm_tb':'/admin/home/exfm/import',
 		'part_tb':'/admin/home/part/import',

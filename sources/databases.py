@@ -15,11 +15,19 @@ class databases():
 								'Master List',
 								'Price',
 								'Installation',
-								#'Google Sheet Data',
+								'New ML',
 								'All',
 				]
 		else:
-			self.update_type =['ExFM',]
+			self.update_type = [
+								'ExFM',
+								'Master List',
+								'Price',
+								'Installation',
+								'New ML',
+								'All',
+				]
+			self.update_type = ['ExFM',]	
 		# self.update_type.sort()
 
 	def select_db_name(self):
@@ -132,7 +140,7 @@ class databases():
 					print(f'can not find file {con} and import as consolidated')
 					print(e)
 
-			if 'Master List' in u_type:
+			elif 'Master List' in u_type:
 				print('\nSelect file Master List:\n')
 				filename = lg.file_select(folder_name='files')
 				try:
@@ -160,7 +168,37 @@ class databases():
 				except Exception as e:
 					print(e)
 
-			if 'Google Sheet Data' in u_type:
+			elif 'New ML' in u_type:
+				print('\nSelect file Master List (New):\n')
+				filename = lg.file_select(folder_name='files')
+				try:
+					# m_list
+					m_list = pd.read_excel(filename,sheet_name='1.MasterPendingList',skiprows=range(1,3))
+					new_header = m_list.iloc[0] #grab the first row for the header
+					m_list = m_list[1:] #take the data less the header row
+					m_list.columns = new_header
+
+					#completed
+					completed = pd.read_excel(filename,sheet_name='2. Completed',skiprows=range(1,1))
+					new_header = completed.iloc[0] #grab the first row for the header
+					completed = completed[1:] #take the data less the header row
+					completed.columns = new_header
+
+					#transfer
+					transfer = pd.read_excel(filename,sheet_name='3. Transfer to sales',skiprows=range(1,1))
+					new_header = transfer.iloc[0] #grab the first row for the header
+					transfer = transfer[1:] #take the data less the header row
+					transfer.columns = new_header
+
+					m_list.to_sql('new_ml',conn,index=False,if_exists='replace')
+					completed.to_sql('completed',conn,index=False,if_exists='replace')
+					transfer.to_sql('transfers',conn,index=False,if_exists='replace')
+					print('Update Master List Done')
+				except Exception as e:
+					print(e)
+
+
+			elif 'Google Sheet Data' in u_type:
 				# try:
 				spreadsheetId = '1bT4W0CiLVD_B_ddRcVkS3MEXbSjvmGb4'
 				url = "https://docs.google.com/spreadsheets/export?exportFormat=xlsx&id=" + spreadsheetId
@@ -174,7 +212,7 @@ class databases():
 				# except:
 				# 	print(f'can not find file Google Sheet Data')
 
-			if 'Price' in u_type:
+			elif 'Price' in u_type:
 				print('\nSelect File Price:\n')
 				try:
 					price_file = lg.file_select(contains='rice',folder_name = 'files')
@@ -189,7 +227,7 @@ class databases():
 
 				except Exception as e:
 					print(e)
-			if 'Installation' in u_type:
+			elif 'Installation' in u_type:
 				print('\nSelect file Installation:\n')
 				try:
 					ins = lg.file_select(folder_name = 'files')

@@ -389,32 +389,35 @@ def download_consolidated(status='incompleted'):
 	driver.close()
 	sleep(2)
 
-def login_exfm(driver_on = True):
+def login_exfm(uname,driver,driver_on = True):
 	# generate key using fernet
 	# key = Fernet.generate_key().decode()
 	key = 'cLAiAdZU1U0sxWWK8sxhF0IWIBP4KrR3xhdu3x1EDQI='
 	
-	
-	# login ExFM and download latest incompleted data
-	name,pw = save_id('exfm.txt',key)
-	driver = login_url('exfm',name,pw)
-	
-	
-	while True:
-		try:
-			driver.find_element_by_xpath('//*[@id="RPR_SEARCH_LINK"]').click() # select RMA Search	
-			break
-		except Exception as e:
-			print ('Wrong Username or Password. Try again...')
-			name,pw = save_id('exfm.txt',key)
-			driver = login_url('exfm',name,pw)
-	
+	if uname == '':
+		# login ExFM and download latest incompleted data
+		name,pw = save_id('exfm.txt',key)
+		driver = login_url('exfm',name,pw)
+		
+		
+		while True:
+			try:
+				driver.find_element_by_xpath('//*[@id="RPR_SEARCH_LINK"]').click() # select RMA Search	
+				break
+			except Exception as e:
+				print ('Wrong Username or Password. Try again...')
+				name,pw = save_id('exfm.txt',key)
+				driver = login_url('exfm',name,pw)
+	else:
+		print(f'Already login with user name {uname}')
+		# driver = ''
+
 	d_type_menu = [
 					'Incompleted',
 					'History',
 					'Equipments',
 					'Customers',
-					
+					'Do not Download'
 					]
 	#border table
 	print(f'\n{"_"*50}')
@@ -461,23 +464,27 @@ def login_exfm(driver_on = True):
 		sleep(0.5)
 		driver.find_element_by_xpath('//*[@id="sidEXPORT_BUTTON_IMAGE"]').click()
 	
-
-	# check latest file
-	i_wait = 0
-	while True:
-		try: # check file already
-			file, ctime = file_latest(folder_name='Downloads')
-			if file.endswith('xls'):
-				print (f'\nDonwload file {file} succesful at {ctime}')
-				break
-			else:
-				print(f'Please wait for compressing file {file}...{i_wait}s')
+	if d_type != d_type_menu[4]: # Do not download
+		
+		# check latest file
+		i_wait = 0
+		while True:
+			try: # check file already
+				file, ctime = file_latest(folder_name='Downloads')
+				if file.endswith('xls'):
+					print (f'\nDonwload file {file} succesful at {ctime}')
+					break
+				else:
+					print(f'Please wait for compressing file {file}...{i_wait}s')
+					i_wait +=3
+					sleep(3)
+			except Exception as e: #waiting for download
+				print(f'Please wait for dowloading...{i_wait}s')
 				i_wait +=3
 				sleep(3)
-		except Exception as e: #waiting for download
-			print(f'Please wait for dowloading...{i_wait}s')
-			i_wait +=3
-			sleep(3)
+	else:
+		pass
+		
 	if driver_on:
 		return driver,d_type
 	else:

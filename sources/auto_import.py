@@ -1,5 +1,5 @@
 import sources.logins as lg 
-import sources.pending_process as pp
+# import sources.pending_process as pp
 import sources.web_process as wp
 import os
 import pathlib
@@ -38,7 +38,7 @@ while True:
 		web_link = s_link
 		break
 
-folder_name='exports'
+folder_name='New web'
 driver = lg.check_driver()
 chromeOptions = webdriver.ChromeOptions()
 prefs = {"download.default_directory" : str(os.path.join(pathlib.Path().absolute(),folder_name))}
@@ -55,11 +55,11 @@ driver.get(web_link)
 
 wp.login_web(driver,web_link,user_id='robocon2021',user_pw='endocare2021')
 #------backup data pending----------
-driver.get(web_link+'/admin/home/pending/export/?')
-wp.web_export(driver,'xlsx')
-sleep(0.5)
-file,ctime = lg.file_latest('exports')
-print (f"download success {file}")
+# driver.get(web_link+'/admin/home/pending/export/?')
+# wp.web_export(driver,'xlsx')
+# sleep(0.5)
+# file,ctime = lg.file_latest('exports')
+# print (f"download success {file}")
 
 #------backup data comment----------
 driver.get(web_link+'/admin/whiteboard/comment/export/?')

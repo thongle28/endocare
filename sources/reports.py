@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from sqlite3 import connect
-import sources.parts_list_0705 as pl
+import sources.parts_list_0802 as pl
 import xlwings as xw 
 from datetime import datetime as dt
 import pathlib
@@ -193,10 +193,10 @@ def main(conn):
 		else:
 			rma=''
 			continue
-		chosen = str(input('[GDKT] or Trouble Report(tr): '))
+		choosen = str(input('[GDKT] or Trouble Report(tr): '))
 		try:
-			if chosen =='': gdkt_report(rma,conn)
-			if chosen.upper() =='TR': tr_report(rma,conn)
+			if choosen =='' or choosen.upper() == 'GDKT': gdkt_report(rma,conn)
+			if choosen.upper() =='TR': tr_report(rma,conn)
 		except Exception as e:
 			print(e,rma)
 
@@ -292,18 +292,18 @@ def quotation(conn):
 				b.wb.sheets('Parts').pictures.add(os.path.join(path,img_name),name='img_name',top = qr_top+5,left = qr_left+22)
 			
 				# add contact
-				try:
-					q =f'SELECT [contacted by],[contact name] FROM consolidated WHERE [RMA NO.]="{rma}"'
-					contact = pd.read_sql(q,conn)
-					b.wb.sheets('Quotation').range('D14').value = f"{str(contact['Contacted by'][0])}/{str(contact['Contact Name'][0])}"
-				except Exception as e:
-					print(e)
+				# try:
+				q =f'SELECT [contacted by],[contact name] FROM consolidated WHERE [RMA NO.]="{rma}"'
+				contact = pd.read_sql(q,conn)
+				b.wb.sheets('Quotation').range('D14').value = f"{str(contact['Contacted by'][0])}/{str(contact['Contact Name'][0])}"
+				# except Exception as e:
+				# 	print(e)
 
 				b.input_data()
 				b.save_and_close()
 				q_report.update({rma:(part_list,info,price_add,title)})
 			except Exception as e:
 				print(e)
-				rma_no_part_list.append(rma)
+				# rma_no_part_list.append(rma)
 				print('Can not export')
 			print(f'Done for {rma}!')
