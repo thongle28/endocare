@@ -389,26 +389,29 @@ def download_consolidated(status='incompleted'):
 	driver.close()
 	sleep(2)
 
-def login_exfm(driver_on = True):
+def login_exfm(uname,driver,driver_on = True):
 	# generate key using fernet
 	# key = Fernet.generate_key().decode()
 	key = 'cLAiAdZU1U0sxWWK8sxhF0IWIBP4KrR3xhdu3x1EDQI='
 	
-	
-	# login ExFM and download latest incompleted data
-	name,pw = save_id('exfm.txt',key)
-	driver = login_url('exfm',name,pw)
-	
-	
-	while True:
-		try:
-			driver.find_element_by_xpath('//*[@id="RPR_SEARCH_LINK"]').click() # select RMA Search	
-			break
-		except Exception as e:
-			print ('Wrong Username or Password. Try again...')
-			name,pw = save_id('exfm.txt',key)
-			driver = login_url('exfm',name,pw)
-	
+	if uname == '':
+		# login ExFM and download latest incompleted data
+		name,pw = save_id('exfm.txt',key)
+		driver = login_url('exfm',name,pw)
+		
+		
+		while True:
+			try:
+				driver.find_element_by_xpath('//*[@id="RPR_SEARCH_LINK"]').click() # select RMA Search	
+				break
+			except Exception as e:
+				print ('Wrong Username or Password. Try again...')
+				name,pw = save_id('exfm.txt',key)
+				driver = login_url('exfm',name,pw)
+	else:
+		print(f'Already login with user name {uname}')
+		# driver = ''
+
 	d_type_menu = [
 					'Incompleted',
 					'History',

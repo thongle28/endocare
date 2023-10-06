@@ -9,25 +9,19 @@ import openpyxl
 class databases():
 
 	def __init__(self,uname):
-		if uname == 'Le Quang Thong':
-			self.update_type = [
-								'ExFM',
-								'Master List',
-								'Price',
-								'Installation',
-								'New ML',
-								'All',
-				]
-		else:
-			self.update_type = [
-								'ExFM',
-								'Master List',
-								'Price',
-								'Installation',
-								'New ML',
-								'All',
-				]
-			self.update_type = ['ExFM',]	
+		self.update_type = [
+							'ExFM',
+							'Master List',
+							'Price',
+							'Installation',
+							'Customers',
+							'All',
+			]
+		if uname != 'Le Quang Thong':
+			self.update_type = ['ExFM',]
+		
+			
+		self.uname = uname	
 		# self.update_type.sort()
 
 	def select_db_name(self):
@@ -115,7 +109,7 @@ class databases():
 			
 			if 'ExFM' in u_type:
 				print('\nSelect file ExFM:\n')
-				con = lg.file_select(folder_name='files')
+				con = lg.file_select(folder_name='files',start_with = 'SearchResult')
 				try:
 					df = pd.read_excel(con,sheet_name=None)
 					c = df['Consolidated'].drop(['OWNERSHIP'],axis=1)
@@ -140,37 +134,9 @@ class databases():
 					print(f'can not find file {con} and import as consolidated')
 					print(e)
 
-			elif 'Master List' in u_type:
+			if 'Master List' in u_type:
 				print('\nSelect file Master List:\n')
-				filename = lg.file_select(folder_name='files')
-				try:
-					# m_list
-					m_list = pd.read_excel(filename,sheet_name='1.MasterPendingList',skiprows=range(1,3))
-					new_header = m_list.iloc[0] #grab the first row for the header
-					m_list = m_list[1:] #take the data less the header row
-					m_list.columns = new_header
-
-					#completed
-					completed = pd.read_excel(filename,sheet_name='2. Completed',skiprows=range(1,1))
-					new_header = completed.iloc[0] #grab the first row for the header
-					completed = completed[1:] #take the data less the header row
-					completed.columns = new_header
-
-					#transfer
-					transfer = pd.read_excel(filename,sheet_name='3. Transfer to sales',skiprows=range(1,1))
-					new_header = transfer.iloc[0] #grab the first row for the header
-					transfer = transfer[1:] #take the data less the header row
-					transfer.columns = new_header
-
-					m_list.to_sql('m_list',conn,index=False,if_exists='replace')
-					completed.to_sql('completed',conn,index=False,if_exists='replace')
-					transfer.to_sql('transfers',conn,index=False,if_exists='replace')
-				except Exception as e:
-					print(e)
-
-			elif 'New ML' in u_type:
-				print('\nSelect file Master List (New):\n')
-				filename = lg.file_select(folder_name='files')
+				filename = lg.file_select(folder_name='files',end_with='.xlsm')
 				try:
 					# m_list
 					m_list = pd.read_excel(filename,sheet_name='1.MasterPendingList',skiprows=range(1,3))
@@ -193,12 +159,11 @@ class databases():
 					m_list.to_sql('new_ml',conn,index=False,if_exists='replace')
 					completed.to_sql('completed',conn,index=False,if_exists='replace')
 					transfer.to_sql('transfers',conn,index=False,if_exists='replace')
-					print('Update Master List Done')
 				except Exception as e:
 					print(e)
 
-
-			elif 'Google Sheet Data' in u_type:
+			
+			if 'Google Sheet Data' in u_type:
 				# try:
 				spreadsheetId = '1bT4W0CiLVD_B_ddRcVkS3MEXbSjvmGb4'
 				url = "https://docs.google.com/spreadsheets/export?exportFormat=xlsx&id=" + spreadsheetId
@@ -212,7 +177,7 @@ class databases():
 				# except:
 				# 	print(f'can not find file Google Sheet Data')
 
-			elif 'Price' in u_type:
+			if 'Price' in u_type:
 				print('\nSelect File Price:\n')
 				try:
 					price_file = lg.file_select(contains='rice',folder_name = 'files')
@@ -227,19 +192,28 @@ class databases():
 
 				except Exception as e:
 					print(e)
-			elif 'Installation' in u_type:
+			if 'Installation' in u_type:
 				print('\nSelect file Installation:\n')
 				try:
-					ins = lg.file_select(folder_name = 'files')
+					ins = lg.file_select(folder_name = 'files',start_with = 'EQP')
 					df1 = pd.read_excel(ins,sheet_name=None)
 					(df1['csvdata']).to_sql('install',conn,index=False,if_exists='replace')
 					print(f'\nInstallation file stored in {db_name}')
 				except:
 					print(f'can not find file {ins} and import as installation data')
-			else:
-				print(f'Select wrong {u_type}')
+			if 'Customers' in u_type:
+				print('\nSelect file ACC_TBL_EXP:\n')
+				try:
+					ins = lg.file_select(folder_name = 'files',start_with='ACC')
+					df1 = pd.read_excel(ins,sheet_name=None)
+					(df1['csvdata']).to_sql('acc_tbl_exp',conn,index=False,if_exists='replace')
+					print(f'\nCustomer file stored in {db_name}')
+				except:
+					print(f'can not find file {ins} and import as installation data')
+			# else:
+			# 	print(f'Select wrong {u_type}')
 
-			display(pd.read_sql('SELECT name from sqlite_master where type= "table";',conn))
+			# display(pd.read_sql('SELECT name from sqlite_master where type= "table";',conn))
 
 		return conn
 

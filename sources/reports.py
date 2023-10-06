@@ -4,6 +4,7 @@ from sqlite3 import connect
 import sources.parts_list_0802 as pl
 import xlwings as xw 
 from datetime import datetime as dt
+from datetime import timedelta
 import pathlib
 import qrcode
 from IPython.display import Image, display
@@ -195,7 +196,9 @@ def main(conn):
 			continue
 		choosen = str(input('[GDKT] or Trouble Report(tr): '))
 		try:
-			if choosen =='' or choosen.upper() == 'GDKT': gdkt_report(rma,conn)
+			if choosen =='' or choosen.upper() == 'GDKT': 
+				gdkt_report(rma,conn)
+				change_stt_info = input('Change Status Info to "Waiting for Next Process Avaiable? ([Y]/N)"')
 			if choosen.upper() =='TR': tr_report(rma,conn)
 		except Exception as e:
 			print(e,rma)
@@ -307,3 +310,204 @@ def quotation(conn):
 				# rma_no_part_list.append(rma)
 				print('Can not export')
 			print(f'Done for {rma}!')
+
+class weekly_report():
+
+	def __init__(self,conn):
+		self.conn = conn
+		today = dt.today()
+		current_weekday = today.weekday()  # 0 for Monday, 1 for Tuesday, ..., 6 for Sunday
+		monday_of_this_week = today - timedelta(days=current_weekday)
+
+		# print("Monday of this week:", monday_of_this_week.date())
+		ans = str(input(f'Start Date of Report(YYYY-MM-DD): {monday_of_this_week.date()}?[Y]/N') or monday_of_this_week.date())
+		
+		self.report_start_date = ans
+
+
+	def receive(self):
+		report_start_date = self.report_start_date
+		conn = self.conn
+		q = f'''
+				SELECT [rma no.],customer_name,model,serial_no,
+				strftime('%Y-%m-%d',recieve_date)AS [receive date],
+				recieve_user_name,repair_status,e.location
+				
+				FROM consolidated c
+				LEFT JOIN engineers e ON c.recieve_user_name = e.exfm_name
+				WHERE recieve_date >= '{report_start_date}'
+				ORDER BY location,customer_name
+				
+			'''
+		receive = pd.read_sql(q,conn)
+		self.receive = receive 
+
+	def inspection(self):
+
+		# inspection and repair by location
+		report_start_date = self.report_start_date
+		conn = self.conn
+		
+		q = f'''
+					SELECT 
+						DISTINCT c.[rma no.],customer_name,model,serial_no,recieve_date,in_inspect_date,
+						r.[start time],r.[end time],'Inspection' AS [repair size],
+						in_inspect_user_name AS PIC,e.location
+
+						FROM (consolidated c
+						LEFT JOIN engineers e ON c.recieve_user_name = e.exfm_name)
+						LEFT JOIN repair_code r ON c.[rma no.] = r.[rma no.]
+						WHERE in_inspect_date >= '{report_start_date}'
+						
+						
+					UNION ALL
+						SELECT DISTINCT c.[rma no.],customer_name,model,serial_no,recieve_date,in_inspect_date,
+							r.[start time],r.[end time],c.[repair size],
+							CASE
+								WHEN r.[start user] NOT NULL THEN r.[start user]
+								ELSE c.[repair user name] END AS [Repair User],
+							e.location
+
+
+							FROM (consolidated c
+							LEFT JOIN engineers e ON c.recieve_user_name = e.exfm_name)
+							LEFT JOIN repair_code r ON c.[rma no.] = r.[rma no.]
+							WHERE r.[start time] >= '{report_start_date}'
+							
+			'''
+		wr = pd.read_sql(q,conn)
+		wr.to_sql('weekly_report',conn,if_exists = 'replace',index = False)
+
+		q = f'''
+				SELECT [rma no.],customer_name,model,serial_no,recieve_date,[repair size],location,
+				CASE
+					WHEN [repair size] = 'Inspection' AND PIC ='Nguyen Thai' THEN 'Inspection'
+					WHEN [repair size] = 'Minor' AND PIC ='Nguyen Thai' THEN 'Minor'
+					WHEN [repair size] = 'Other' AND PIC ='Nguyen Thai' THEN 'Minor'
+					WHEN [repair size] = 'Major' AND PIC ='Nguyen Thai' THEN 'Major'
+					
+					ELSE '-' END AS 'Nguyen',
+				CASE
+					WHEN [repair size] = 'Inspection' AND PIC ='hoang' THEN 'Inspection'
+					WHEN [repair size] = 'Minor' AND PIC ='hoang' THEN 'Minor'
+					WHEN [repair size] = 'Other' AND PIC ='hoang' THEN 'Minor'
+					WHEN [repair size] = 'Major' AND PIC ='hoang' THEN 'Major'
+					ELSE '-' END AS 'Hoang',
+				CASE
+					WHEN [repair size] = 'Inspection' AND PIC ='Le Quang Thong' THEN 'Inspection'
+					WHEN [repair size] = 'Minor' AND PIC ='Le Quang Thong' THEN 'Minor'
+					WHEN [repair size] = 'Other' AND PIC ='Le Quang Thong' THEN 'Minor'
+					WHEN [repair size] = 'Major' AND PIC ='Le Quang Thong' THEN 'Major'
+					ELSE '-' END AS 'Thong',
+				CASE
+					WHEN [repair size] = 'Inspection' AND PIC ='Nguyen Khac Thang (Hanoi)' THEN 'Inspection'
+					WHEN [repair size] = 'Minor' AND PIC ='Nguyen Khac Thang (Hanoi)' THEN 'Minor'
+					WHEN [repair size] = 'Other' AND PIC ='Nguyen Khac Thang (Hanoi)' THEN 'Minor'
+					WHEN [repair size] = 'Major' AND PIC ='Nguyen Khac Thang (Hanoi)' THEN 'Major'
+					ELSE '-' END AS 'Thang',
+				CASE
+					WHEN [repair size] = 'Inspection' AND PIC ='Le Van Hoan' THEN 'Inspection'
+					WHEN [repair size] = 'Minor' AND PIC ='Le Van Hoan' THEN 'Minor'
+					WHEN [repair size] = 'Other' AND PIC ='Le Van Hoan' THEN 'Minor'
+					WHEN [repair size] = 'Major' AND PIC ='Le Van Hoan' THEN 'Major'
+					ELSE '-' END AS 'Hoanle',
+				CASE
+					WHEN [repair size] = 'Inspection' AND PIC ='Nguyen Tuan Minh' THEN 'Inspection'
+					WHEN [repair size] = 'Minor' AND PIC ='Nguyen Tuan Minh' THEN 'Minor'
+					WHEN [repair size] = 'Other' AND PIC ='Nguyen Tuan Minh' THEN 'Minor'
+					WHEN [repair size] = 'Major' AND PIC ='Nguyen Tuan Minh' THEN 'Major'
+					ELSE '-' END AS 'Minh'
+					
+					
+					
+				FROM weekly_report
+				ORDER BY location,[repair size]
+			'''
+		completed = pd.read_sql(q,conn)
+
+		self.completed = completed
+
+	def export(self):
+		# open template
+		wb = xw.Book('templates/weekly_report.xlsx')
+		sh_in = wb.sheets('In')
+		sh_out = wb.sheets('Out')
+
+		#initial IN
+		sh_in.range('A2').value = 'Customer'
+		sh_in.range('B2').value = 'Model'
+		sh_in.range('C2').value = 'Serial'
+		sh_in.range('D2').value = 'Recieve'
+		sh_in.range('E2').value = 'Location'
+		sh_in.range('F2').value = 'Status'
+
+		# import data
+		receive = self.receive
+		completed = self.completed
+
+		for i in range(len(receive)):
+			sh_in.range('A3').offset(i,0).value = receive['CUSTOMER_NAME'][i]
+			sh_in.range('B3').offset(i,0).value = receive['MODEL'][i]
+			sh_in.range('C3').offset(i,0).value = receive['SERIAL_NO'][i]
+			sh_in.range('D3').offset(i,0).value = receive['receive date'][i]
+			sh_in.range('E3').offset(i,0).value = receive['location'][i]
+			sh_in.range('F3').offset(i,0).value = receive['REPAIR_STATUS'][i]
+			
+		#initial OUT
+		sh_out.range('A2').value = 'Customer'
+		sh_out.range('B2').value = 'Model'
+		sh_out.range('C2').value = 'Serial'
+		sh_out.range('D2').value = 'Receive'
+		sh_out.range('E2').value = 'Nguyên'
+		sh_out.range('F2').value = 'Hoàng'
+		sh_out.range('G2').value = 'Thông'
+
+		hcm = completed[completed['location']=='HCM']
+		hcm = hcm.reset_index(drop=True)
+
+		for i in range(len(hcm)):
+			sh_out.range('A3').offset(i,0).value = hcm['CUSTOMER_NAME'][i]
+			sh_out.range('B3').offset(i,0).value = hcm['MODEL'][i]
+			sh_out.range('C3').offset(i,0).value = hcm['SERIAL_NO'][i]
+			sh_out.range('D3').offset(i,0).value = hcm['RECIEVE_DATE'][i]
+			sh_out.range('E3').offset(i,0).value = hcm['Nguyen'][i]
+			sh_out.range('F3').offset(i,0).value = hcm['Hoang'][i]
+			sh_out.range('G3').offset(i,0).value = hcm['Thong'][i]
+		 
+		k = len(hcm)+3
+
+		sh_out.range('A2').offset(k,0).value = 'Customer'
+		sh_out.range('B2').offset(k,0).value = 'Model'
+		sh_out.range('C2').offset(k,0).value = 'Serial'
+		sh_out.range('D2').offset(k,0).value = 'Receive'
+		sh_out.range('E2').offset(k,0).value = 'Thắng'
+		sh_out.range('F2').offset(k,0).value = 'Hoàn'
+		sh_out.range('G2').offset(k,0).value = 'Minh'
+
+		hanoi = completed[completed['location']=='Hanoi']
+		hanoi = hanoi.reset_index(drop=True)
+
+		for i in range(len(hanoi)):
+			sh_out.range('A3').offset(i+k,0).value = hanoi['CUSTOMER_NAME'][i]
+			sh_out.range('B3').offset(i+k,0).value = hanoi['MODEL'][i]
+			sh_out.range('C3').offset(i+k,0).value = hanoi['SERIAL_NO'][i]
+			sh_out.range('D3').offset(i+k,0).value = hanoi['RECIEVE_DATE'][i]
+			sh_out.range('E3').offset(i+k,0).value = hanoi['Thang'][i]
+			sh_out.range('F3').offset(i+k,0).value = hanoi['Hoanle'][i]
+			sh_out.range('G3').offset(i+k,0).value = hanoi['Minh'][i]
+		print('Done')
+
+		today = dt.now().strftime('%y%m%d')
+		folder_name = 'weekly_report'
+		try:
+			os.mkdir(folder_name)
+			print(f'folder {folder_name} was created.')
+			
+		except:
+			print(f'Folder {folder_name} exists')
+		try:
+			wb.save(f'{folder_name}/weekly_report_{today}.xlsx')
+			print(f'{wb.name} saved and close.')
+			wb.close()
+		except Exception as e:
+			print(eS)

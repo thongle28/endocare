@@ -184,7 +184,7 @@ def file_filter(start_with='',end_with='',path='',printer = True):
 			if printer:
 				# print('  ',i,'  | ',file)
 				print(f'|{i: >3}  |  {file: <40}|')
-	print(f'|{"_"*48}|') #bottom border
+	if printer: print(f'|{"_"*48}|') #bottom border
 	return filepaths
 
 
@@ -442,7 +442,7 @@ def login_exfm(uname,driver,driver_on = True):
 		else:
 			print(f'Input number must be less than {len(d_type_menu)}\n')
 	
-	print(d_type)
+	
 	
 	# driver.find_element_by_xpath('//*[@id="RPR_SEARCH_LINK"]').click() # select RMA Search
 	
@@ -465,7 +465,7 @@ def login_exfm(uname,driver,driver_on = True):
 		driver.find_element_by_xpath('//*[@id="sidEXPORT_BUTTON_IMAGE"]').click()
 	
 	if d_type != d_type_menu[4]: # Do not download
-		
+		print(d_type)
 		# check latest file
 		i_wait = 0
 		while True:
@@ -483,7 +483,8 @@ def login_exfm(uname,driver,driver_on = True):
 				i_wait +=3
 				sleep(3)
 	else:
-		pass
+		# no download
+		pass 
 		
 	if driver_on:
 		return driver,d_type

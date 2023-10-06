@@ -3,6 +3,9 @@ import sources.databases as db
 import sources.reports as rp
 import sources.new_web as nw
 import os
+import pathlib
+import shutil
+from datetime import datetime as dt
 
 from sqlite3 import connect
 import pandas as pd
@@ -11,7 +14,7 @@ from IPython.display import display
 #  pyinstaller -i neverstop.ico -n Endocare --onefile main.py
 
 global conn, driver,db_name,ver,uname
-ver = '1.2.7'
+ver = '1.3.1'
 db_name =''
 uname =''
 
@@ -28,7 +31,7 @@ class chel():
 					# 'Update Master List',
 					'Quotation',
 					'GDKT/Trouble Report',
-					# 'Add Image Report',
+					'Weekly Report',
 					'Run SQL',
 					'Exit',
 		]
@@ -95,31 +98,40 @@ class chel():
 
 	def processing(self,function):
 		menu_list = self.menu_list
-		
+		global conn
 		if function == menu_list[0]: # Login ExFM
 
 			driver,uname = functions().DownloadExFM()
 			return	driver,uname	
 
-		if function == menu_list[1]: # Select Database
+		elif function == menu_list[1]: # Select Database
 			return functions().SelectDatabase()
 
-		if function == 'Run SQL':
+		elif function == 'Run SQL':
 			functions().run_sql()
 
-		if function == 'GDKT/Trouble Report':
+		elif function == 'GDKT/Trouble Report':
 			try:
 				rp.main(conn)
 			except Exception as e:
 				print(e,'\nSelect Database (Step 2 first)')
 		
-		if function == 'Quotation':
+		elif function == 'Quotation':
 			try:
 				rp.quotation(conn)
 			except Exception as e:
 				print(e,'\nSelect Database (Step 2 first)')
 
-		if function == menu_list[-1]:
+		elif function == 'Weekly Report':
+			try:
+				swr = rp.weekly_report(conn)
+				swr.receive()
+				swr.inspection()
+				swr.export()
+			except Exception as e:
+				print(e,'\nSelect Database (Step 2 first)')
+
+		elif function == menu_list[-1]:
 			pass
 
 		else:
@@ -146,16 +158,11 @@ class functions():
 		try:
 			driver_bk = driver
 			driver,d_type = lg.login_exfm(uname = self.uname,driver = driver_bk)
+
 		except:
 			driver,d_type = lg.login_exfm(uname = self.uname,driver='')
 
-		# driver = lg.check_driver()
-		# try:
-		# 	driver.close()
-		# except Exception as e:
-		# 	pass
-
-		# d_type_menu = self.d_type_menu
+		
 
 		
 		
@@ -163,11 +170,13 @@ class functions():
 			driver = driver_bk
 		uname = driver.find_element_by_xpath('//*[@id="username"]').get_attribute('innerHTML')
 		
+
 		# Rename for Download All
 		if d_type.lower() =='history':
 			folder_name = 'Downloads'
 			file,ctime = lg.file_latest(folder_name)
-			new_name = f'{file.split(".")[0]}_All.xls'
+			today = dt.now().strftime('%y%m%d')
+			new_name = f'{file.split(".")[0]}_{today}.xls'
 			fname = os.path.join(folder_name,file)
 			n_name =  os.path.join(folder_name,new_name)
 			try:
@@ -181,12 +190,22 @@ class functions():
 		except:
 			print(f'Folder {folder_name} exists')
 		lg.backups('Downloads',folder_name,'.xls')
+
+		# remove download folder
+		try:
+			shutil.rmtree(os.path.join(pathlib.Path().absolute(),'Downloads'),ignore_errors = True)
+		except Exception as e:
+			print(f'\n{e}')
+			
 		return driver,uname
 
 	def SelectDatabase(self):
 		global db_name,conn
 		call_db = db.databases(uname)
-		db_name = call_db.select_db_name()
+		if uname == 'Le Quang Thong':
+			db_name = call_db.select_db_name()
+		else:
+			db_name = 'quotation.db'
 		conn = call_db.update_db(db_name)
 		return conn
 		
