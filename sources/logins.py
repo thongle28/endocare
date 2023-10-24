@@ -447,6 +447,8 @@ def login_exfm(uname,driver,driver_on = True):
 	# driver.find_element_by_xpath('//*[@id="RPR_SEARCH_LINK"]').click() # select RMA Search
 	
 	if d_type == d_type_menu[0]: # Incompleted
+		driver.find_element_by_xpath('//*[@id="sidCLEAR_BUTTON_IMAGE"]').click() #click download
+		sleep(0.2)
 		driver.find_element_by_xpath('//*[@id="sidEXPORT_CONSOLIDATED_BUTTON_IMAGE"]').click() #click download
 	
 	if d_type == d_type_menu[1]: # History

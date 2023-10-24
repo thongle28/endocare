@@ -2,24 +2,20 @@ import sources.logins as lg
 import sources.databases as db
 import sources.reports as rp
 import sources.new_web as nw
+import sources.update_ml as uml
 import os
 import pathlib
 import shutil
+from time import sleep
 from datetime import datetime as dt
 
 from sqlite3 import connect
 import pandas as pd
 from IPython.display import display
 
-#  pyinstaller -i neverstop.ico -n Endocare --onefile main.py
-
-global conn, driver,db_name,ver,uname
-ver = '1.3.1'
-db_name =''
-uname =''
+# pyinstaller -i neverstop.ico -n Endocare --onefile main.py
 
 
-print (f'{"-"*17}Endo Care v{ver}{"-"*17}')
 
 class chel():
 
@@ -28,7 +24,7 @@ class chel():
 		self.menu_list =[
 					f'Login ExFM ({uname})',
 					f'Select Database ({db_name})',
-					# 'Update Master List',
+					'Update Master List',
 					'Quotation',
 					'GDKT/Trouble Report',
 					'Weekly Report',
@@ -43,15 +39,18 @@ class chel():
 
 
 	def menu(self): #return index
-		menu_list = self.menu_list
-		#border table
-		print(f'\n{"_"*50}')
-		print(f'{"|  No.|  Function": <49}|')
-		print(f'|{"_"*48}|')
-		for i in range(1,1+len(menu_list)):
-			print(f'|{i: >3}  |  {menu_list[i-1]: <40}|')
-		print(f'|{"_"*48}|') #bottom border
 		while True:
+			global driver, uname
+			menu_list = self.menu_list
+			#border table
+			print(f'\n{"_"*50}')
+			print(f'{"|  No.|  Function": <49}|')
+			print(f'|{"_"*48}|')
+			for i in range(1,1+len(menu_list)):
+				print(f'|{i: >3}  |  {menu_list[i-1]: <40}|')
+			print(f'|{"_"*48}|') #bottom border
+		
+			# next_step = False
 			ind = str(input('Select Function by Index: '))
 			web_key = ['noisoifujifilm',
 						'website',
@@ -60,11 +59,19 @@ class chel():
 						'endocare',
 
 					]
+			login_key = ['login',
+						'sign-in',
+						]
 			try:
 				ind = int(ind)
 			except:
 				if ind.upper() == 'Q' or ind.upper() == 'QUIT':
 					break
+				elif ind.lower() in login_key:
+					# global driver, uname
+					driver,uname = functions().DownloadExFM()
+					continue
+
 				elif ind.lower() in web_key:
 					print('Add data to website: noisoifujifilm.vn')
 					try:
@@ -86,7 +93,12 @@ class chel():
 					run_all.export_csv()
 					import sources.auto_import
 
-					break
+					continue
+				elif ind.lower() =='adminstrator':
+					uname = 'Admin'
+					print('Unlock sucessfull Admin mode')
+					continue
+
 				else:
 					print('Only accept number')
 					continue
@@ -98,13 +110,15 @@ class chel():
 
 	def processing(self,function):
 		menu_list = self.menu_list
-		global conn
-		if function == menu_list[0]: # Login ExFM
+		global conn,driver,uname
+		# if function == menu_list[0]: # Login ExFM
+		if 'login' in function.lower():
 
 			driver,uname = functions().DownloadExFM()
 			return	driver,uname	
 
-		elif function == menu_list[1]: # Select Database
+		# elif function == menu_list[1]: # Select Database
+		elif 'database' in function.lower(): # Select Database
 			return functions().SelectDatabase()
 
 		elif function == 'Run SQL':
@@ -113,6 +127,17 @@ class chel():
 		elif function == 'GDKT/Trouble Report':
 			try:
 				rp.main(conn)
+			except Exception as e:
+				print(e,'\nSelect Database (Step 2 first)')
+		
+		elif function == 'Update Master List':
+			
+			try:
+				monday = uml.update_ml(conn)
+				monday.new_job()
+				monday.update_job()
+				monday.empty_status()
+				monday.export()
 			except Exception as e:
 				print(e,'\nSelect Database (Step 2 first)')
 		
@@ -137,19 +162,10 @@ class chel():
 		else:
 			print(function)
 
-	def update_ml(self,driver):
-		pass
 
 class functions():
 	def __init__(self):
-		# pass
-		# self.d_type_menu = [
-		# 				'Incompleted',
-		# 				'History',
-		# 				'Equipments',
-		# 				'Customers',
-		# 				'Do not download',
-		# 				]
+		
 		self.uname = uname
 
 	def DownloadExFM(self):
@@ -202,7 +218,7 @@ class functions():
 	def SelectDatabase(self):
 		global db_name,conn
 		call_db = db.databases(uname)
-		if uname == 'Le Quang Thong':
+		if uname in ('Le Quang Thong','Admin'):
 			db_name = call_db.select_db_name()
 		else:
 			db_name = 'quotation.db'
@@ -243,31 +259,40 @@ class functions():
 			if 'quit()' in q:
 				break # outer loop
 
-while True:
-	print(db_name)
-	name = chel().menu()
-	if name == None: 
-		print('Thank you')
-		break
-	else:
-		if not name == None: print(f'Select function "{name}"')
-		
-		print('-'*30)
-		if name == 'Login ExFM ()':
-			driver,uname = chel().processing(name)
-		elif name =='Select Database ()':
+if __name__ == "__main__":
+	global conn, driver,db_name,ver,uname
+	ver = '2.1.1'
+	db_name =''
+	uname =''
 
-			conn = chel().processing(name)
-			# print(conn)
-			q = 'SELECT * FROM consolidated'
-			
-		elif name == 'Exit': 
-			print('Thank you!!! End of Game.')
+
+	print (f'{"-"*17}Endo Care v{ver}{"-"*17}')
+	while True:
+		print(db_name)
+		name = chel().menu()
+		print(name,uname)
+		if name == None: 
+			print('Thank you')
 			break
-		elif name == 'Update Master List':
-			print(conn)
-
 		else:
-			chel().processing(name)
-	
+			if not name == None: print(f'Select function "{name}"')
+			
+			print('-'*30)
+			if name == 'Login ExFM ()':
+				driver,uname = chel().processing(name)
+			elif name =='Select Database ()':
+
+				conn = chel().processing(name)
+				
+				
+			elif name == 'Exit': 
+				print('Thank you!!! End of Game.')
+				sleep(3)
+				break
+			
+			else:
+				chel().processing(name)
+		
+
+
 

@@ -149,7 +149,7 @@ def tr_report(rma,conn):
 		print('table not empty')
 	report_num = int(report_num) +1
 	print('Done')
-print('Done')
+	print('Done')
 
 
 def main(conn):

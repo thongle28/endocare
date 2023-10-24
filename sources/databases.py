@@ -12,13 +12,14 @@ class databases():
 		self.update_type = [
 							'ExFM',
 							'Master List',
+							'Both',
 							'Price',
 							'Installation',
 							'Customers',
 							'All',
 			]
-		if uname != 'Le Quang Thong':
-			self.update_type = ['ExFM',]
+		# if uname != 'Le Quang Thong':
+		# 	self.update_type = ['ExFM',]
 		
 			
 		self.uname = uname	
@@ -135,6 +136,60 @@ class databases():
 					print(e)
 
 			if 'Master List' in u_type:
+				print('\nSelect file Master List:\n')
+				filename = lg.file_select(folder_name='files',end_with='.xlsm')
+				try:
+					# m_list
+					m_list = pd.read_excel(filename,sheet_name='1.MasterPendingList',skiprows=range(1,3))
+					new_header = m_list.iloc[0] #grab the first row for the header
+					m_list = m_list[1:] #take the data less the header row
+					m_list.columns = new_header
+
+					#completed
+					completed = pd.read_excel(filename,sheet_name='2. Completed',skiprows=range(1,1))
+					new_header = completed.iloc[0] #grab the first row for the header
+					completed = completed[1:] #take the data less the header row
+					completed.columns = new_header
+
+					#transfer
+					transfer = pd.read_excel(filename,sheet_name='3. Transfer to sales',skiprows=range(1,1))
+					new_header = transfer.iloc[0] #grab the first row for the header
+					transfer = transfer[1:] #take the data less the header row
+					transfer.columns = new_header
+
+					m_list.to_sql('new_ml',conn,index=False,if_exists='replace')
+					completed.to_sql('completed',conn,index=False,if_exists='replace')
+					transfer.to_sql('transfers',conn,index=False,if_exists='replace')
+				except Exception as e:
+					print(e)
+
+			if 'both' in u_type.lower(): # ExFM & Master List
+				print('\nSelect file ExFM:\n')
+				con = lg.file_select(folder_name='files',start_with = 'SearchResult')
+				try:
+					df = pd.read_excel(con,sheet_name=None)
+					c = df['Consolidated'].drop(['OWNERSHIP'],axis=1)
+					c.to_sql('consolidated',conn,index=False,if_exists='replace')
+					(df['PF-Code']).to_sql('pf_code',conn,index=False,if_exists='replace')
+					(df['CD-Code']).to_sql('cd_code',conn,index=False,if_exists='replace')
+					(df['R-Code']).to_sql('repair_code',conn,index=False,if_exists='replace')
+					(df['Parts']).to_sql('parts',conn,index=False,if_exists='replace')
+					print(f'\nConsolidated file stored in {db_name}')
+
+					# google sheet
+					spreadsheetId = '1bT4W0CiLVD_B_ddRcVkS3MEXbSjvmGb4'
+					url = "https://docs.google.com/spreadsheets/export?exportFormat=xlsx&id=" + spreadsheetId
+					res = requests.get(url)
+					data = BytesIO(res.content)
+					xlsx = openpyxl.load_workbook(filename=data)
+					for name in xlsx.sheetnames:
+						values = pd.read_excel(data, sheet_name=name)
+						values.to_sql(name,conn,index=False,if_exists='replace')
+					print(f'\nDatabase file stored in {db_name}')
+				except Exception as e:
+					print(f'can not find file {con} and import as consolidated')
+					print(e)
+
 				print('\nSelect file Master List:\n')
 				filename = lg.file_select(folder_name='files',end_with='.xlsm')
 				try:
