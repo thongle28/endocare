@@ -1,0 +1,909 @@
+rma,r_code,r_description,vie_name
+FMSV2023080014,R002,ANGL. Replace LR Lock Knob,Bộ phận điều khiển
+FMSV2023090234,R002,ANGL. Replace LR Lock Knob,Bộ phận điều khiển
+FMSV2023100038,R005,ANGL. Repair Angle Knob Mechanism Section,Bộ phận điều khiển
+FMSV2023110006,R005,ANGL. Repair Angle Knob Mechanism Section,Bộ phận điều khiển
+FMSV2023110032,R008,AWT. Replace Air-Water Tube Assembly,Kênh khí nước
+FMSV2023100010,R008,AWT. Replace Air-Water Tube Assembly,Kênh khí nước
+FMSV2023120041,R008,AWT. Replace Air-Water Tube Assembly,Kênh khí nước
+FMSV2023090133,R008,AWT. Replace Air-Water Tube Assembly,Kênh khí nước
+FMSV2023090154,R008,AWT. Replace Air-Water Tube Assembly,Kênh khí nước
+FMSV2023090185,R008,AWT. Replace Air-Water Tube Assembly,Kênh khí nước
+FMSV2023110046,R008,AWT. Replace Air-Water Tube Assembly,Kênh khí nước
+FMSV2023120008,R008,AWT. Replace Air-Water Tube Assembly,Kênh khí nước
+FMSV2023100030,R009,AWT. Cleaning Air-Water Tube Assembly,Kênh khí nước
+FMSV2023120049,R009,AWT. Cleaning Air-Water Tube Assembly,Kênh khí nước
+FMSV2023120053,R009,AWT. Cleaning Air-Water Tube Assembly,Kênh khí nước
+FMSV2023120052,R009,AWT. Cleaning Air-Water Tube Assembly,Kênh khí nước
+FMSV2023090224,R010,AWT. Replace Air-Water Tube Assembly with RBS,Kênh khí nước
+FMSV2023080008,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080057,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023120027,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090069,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090054,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090074,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090011,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090103,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080058,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080085,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080094,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023100011,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023060068,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080038,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090015,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090021,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090150,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110035,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110035,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023050072,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023070056,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023030069,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023100010,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110071,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110072,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023120007,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023120024,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023120041,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090027,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023120005,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080014,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080015,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080016,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080018,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080020,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080024,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080062,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080074,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080075,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080076,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080078,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080079,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080091,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080100,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080101,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080102,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090004,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090005,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090007,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090012,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090049,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090063,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090077,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090079,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090091,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090093,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090096,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090097,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090098,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090102,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090105,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090106,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090108,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090109,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090111,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090112,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090118,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090119,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090120,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090121,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090123,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090128,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090129,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090130,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090131,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090132,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090133,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090134,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090137,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090138,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090141,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090145,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090146,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090147,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090153,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090154,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090155,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090156,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090159,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090165,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090166,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090170,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090171,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090172,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090173,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090179,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090181,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090182,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090183,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090184,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090185,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090186,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090189,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090190,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090192,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090193,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090194,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090195,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090198,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090209,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090219,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090220,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090222,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090223,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090224,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090225,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090229,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090230,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090231,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090232,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090233,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090234,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090236,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090238,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090240,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090241,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090242,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090247,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090248,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090254,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090255,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090256,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090257,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090258,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090259,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090260,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090262,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090268,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090269,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090275,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090276,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090277,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090278,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090279,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090282,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090287,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023080061,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023030041,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023100013,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023100017,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110039,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110021,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110058,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110013,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2024010003,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023120032,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110025,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110028,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110052,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110048,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110045,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110026,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110050,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110046,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023110065,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023120008,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023120029,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2024010008,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2024010001,R012,BSA. Replace Bending Section Assembly with FCT/AWT,Bộ phận uốn cong
+FMSV2023090059,R013,BSA. Replace Wire of Bending Section Assembly,Bộ phận uốn cong
+FMSV2023090107,R013,BSA. Replace Wire of Bending Section Assembly,Bộ phận uốn cong
+FMSV2023110070,R013,BSA. Replace Wire of Bending Section Assembly,Bộ phận uốn cong
+FMSV2023030069,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023080024,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023080078,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090070,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090077,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090099,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090100,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090110,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090133,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090137,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090145,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090170,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090173,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090189,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090192,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090194,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090197,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090198,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090199,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090222,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090232,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090233,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090254,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090257,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090262,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090268,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090278,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023080061,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023120008,R014,CHA. Replace Camera Head Assembly with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090150,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023090097,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023090132,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023090134,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023090209,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023090234,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023110048,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023110050,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023110059,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023110046,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023120009,R015,CHA. Replace Camera Head Assembly with FSA/BSA/FCT,Đầu thu hình
+FMSV2023090129,R016,CHA.Replace Zoom CHA with FCT/AWT/RBS,Đầu thu hình
+FMSV2023090219,R016,CHA.Replace Zoom CHA with FCT/AWT/RBS,Đầu thu hình
+FMSV2023110065,R017,CHA. Replace Zoom Camera Head Assembly with FSA/BS,Đầu thu hình
+FMSV2023110008,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023080079,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023090108,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023090119,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023090166,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023090194,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023090197,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023090257,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023100031,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023110057,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023110070,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023120021,R059,RBS. Replace Rubber for Bending Section,Vỏ cao su
+FMSV2023090054,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023110062,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023080085,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023120010,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023120043,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023080014,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023080016,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023080018,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023090097,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023090112,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023090123,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023090138,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023090171,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023090276,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023090014,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023100013,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023120032,R019,DWA. Replace Drum Wire Assembly/UDLR wire,Dây cáp (thép)
+FMSV2023110023,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023110030,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023110042,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023120040,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023120026,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090103,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023050045L,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023050072,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090027,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023120005,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023120031,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090108,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090121,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090128,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090186,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090193,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090223,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090256,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090259,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090269,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023090275,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023100013,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023110022,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023110026,R022,E. Dry Out Fluid,Sấy khô
+FMSV2023120012,R023,E. Cleaning/Disinfections,Vệ sinh/khử khuẩn
+FMSV2023110041,R023,E. Cleaning/Disinfections,Vệ sinh/khử khuẩn
+FMSV2023110043,R023,E. Cleaning/Disinfections,Vệ sinh/khử khuẩn
+FMSV2023120046,R023,E. Cleaning/Disinfections,Vệ sinh/khử khuẩn
+FMSV2023120031,R023,E. Cleaning/Disinfections,Vệ sinh/khử khuẩn
+FMSV2023090091,R023,E. Cleaning/Disinfections,Vệ sinh/khử khuẩn
+FMSV2023120039,R024,E. Inspection,Kiểm tra
+FMSV2023120037,R024,E. Inspection,Kiểm tra
+FMSV2023120038,R024,E. Inspection,Kiểm tra
+FMSV2023120022,R025,E. Others,Bộ phận khác
+FMSV2023120051,R025,E. Others,Bộ phận khác
+FMSV2023110073,R025,E. Others,Bộ phận khác
+FMSV2023090074,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080094,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023050072,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023120041,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080015,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080018,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080020,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080024,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080062,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080076,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080079,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080091,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080097,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080101,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090004,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090005,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090007,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090012,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090013,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090049,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090093,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090095,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090096,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090100,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090102,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090111,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090112,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090120,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090128,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090129,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090153,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090156,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090165,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090170,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090172,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090181,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090182,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090183,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090186,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090193,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090194,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090199,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090220,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090222,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090229,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090232,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090238,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090248,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090262,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090277,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090278,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090282,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090287,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023080061,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023110028,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023110045,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023110026,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023120017,R028,FCT. Replace Forceps Channel Tube Assembly,Kênh sinh thiết
+FMSV2023090038,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023120027,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023080058,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090150,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023110049,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023120005,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023080075,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090063,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090070,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090079,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090091,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090109,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090118,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090121,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090132,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090133,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090173,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090179,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090195,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090197,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090198,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090209,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090233,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090242,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090254,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090259,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090260,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090268,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090269,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023100017,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023110004,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023110025,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023110027,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023110055,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023110047,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023110046,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023110065,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023120009,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2024010002,R029,FCT. Replace Forceps Channel Tube Assembly with RB,Kênh sinh thiết
+FMSV2023090038,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023080058,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090150,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023110035,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023080024,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090013,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090079,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090105,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090106,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090110,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090133,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090138,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090173,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090176,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090186,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090190,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090192,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090195,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090197,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090197,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090209,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090222,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090223,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090231,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090231,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090231,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090233,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090235,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090239,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090241,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090242,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090247,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090255,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090256,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090262,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090276,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023100006,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023100013,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023110070,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2024010003,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023110026,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023120008,R032,FSA. Replace IG Flexible Section Assembly with FCT,Vỏ ống luồn
+FMSV2023090074,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023080014,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023080015,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023080016,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023080018,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023080074,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023080079,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023080101,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090007,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090012,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090073,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090095,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090096,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090098,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090108,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090109,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090111,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090112,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090123,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090130,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090132,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090132,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090137,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090139,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090145,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090153,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090166,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090172,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090179,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090189,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090220,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090225,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090229,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090234,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090238,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090248,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090258,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090265,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090277,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023090279,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023110039,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023110058,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023110028,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023110048,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023110065,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023120009,R033,FSA. Replace IG Flexible Section Assembly with BSA,Vỏ ống luồn
+FMSV2023080057,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080058,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023070077,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080056,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080085,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023050045L,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090039,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090237,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023030069,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080014,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080016,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080018,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080020,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080024,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080062,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080074,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080076,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080078,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023080079,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090005,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090012,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090013,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090049,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090070,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090073,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090077,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090079,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090093,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090096,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090099,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090105,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090106,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090107,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090108,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090109,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090110,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090111,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090112,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090113,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090118,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090121,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090123,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090128,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090131,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090132,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090133,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090134,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090138,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090139,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090145,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090146,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090171,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090173,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090179,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090194,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090198,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090199,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090208,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090209,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090210,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090211,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090223,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090225,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090230,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090232,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090235,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090239,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090240,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090247,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090255,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090256,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090257,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090258,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090262,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090265,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023030040,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023110039,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023110021,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023110058,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023120028,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023100027,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023110048,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023110026,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023110050,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023120017,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023120029,R034,FSB. Replace LG Flexible Section Assembly,Bộ phận dây dẫn ống soi
+FMSV2023090197,R035,FSB.Replace FSB with Suc/Air/Water Tube,Bộ phận dây dẫn ống soi
+FMSV2023090268,R035,FSB.Replace FSB with Suc/Air/Water Tube,Bộ phận dây dẫn ống soi
+FMSV2023110037,R036,FSB.Replace Cover Rubber,Bộ phận dây dẫn ống soi
+FMSV2023090062,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023120001,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090105,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090106,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090113,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090119,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090191,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090191,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090208,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090210,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090211,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090216,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023090230,R038,ISA. Replace Inserting Section Assembly,Bộ phận thân ống soi
+FMSV2023080020,R039,LC. Replace LG Connector Assembly,Bộ phận kết nối ống soi
+FMSV2023090198,R039,LC. Replace LG Connector Assembly,Bộ phận kết nối ống soi
+FMSV2023090247,R039,LC. Replace LG Connector Assembly,Bộ phận kết nối ống soi
+FMSV2023090021,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023030069,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090027,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090073,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090093,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090100,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090113,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090154,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090171,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090173,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090176,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090190,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090192,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090194,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090218,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090230,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090232,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090233,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090265,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090278,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023110013,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2024010003,R041,LGB. Replace Light Guide Bundle Assembly with FCT/,Dây dẫn sáng
+FMSV2023090069,R045,LPA.Readjust Position of LGB at LPA ,Thấu kính dẫn sáng
+FMSV2023090138,R046,NOZ. Replace Distal End Nozzle,Vòi phun khí nước
+FMSV2023120028,R047,NOZ. Repair/Unclog Nozzle,Vòi phun khí nước
+FMSV2023110040,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023120022,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023120047,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023120040,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023110061,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023110006,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023110029,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023120010,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023120002,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023110047,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023120017,R050,OSA. Readjust/Repair Joint Section of Angle Wire a,Bộ phận điều khiển
+FMSV2023090066,R052,OSA. Replace Main Cover for Operating Section,Vỏ nhựa
+FMSV2023080102,R052,OSA. Replace Main Cover for Operating Section,Vỏ nhựa
+FMSV2023090129,R052,OSA. Replace Main Cover for Operating Section,Vỏ nhựa
+FMSV2023090130,R052,OSA. Replace Main Cover for Operating Section,Vỏ nhựa
+FMSV2023090156,R052,OSA. Replace Main Cover for Operating Section,Vỏ nhựa
+FMSV2023030041,R052,OSA. Replace Main Cover for Operating Section,Vỏ nhựa
+FMSV2023090110,R053,OSA.Replace Operating Section Assembly,Vỏ nhựa
+FMSV2023120032,R053,OSA.Replace Operating Section Assembly,Vỏ nhựa
+FMSV2023090073,R055,PCB. Color Adjustment,Cài màu
+FMSV2023090210,R055,PCB. Color Adjustment,Cài màu
+FMSV2023090211,R055,PCB. Color Adjustment,Cài màu
+FMSV2024010006,R055,PCB. Color Adjustment,Cài màu
+FMSV2023110059,R055,PCB. Color Adjustment,Cài màu
+FMSV2023120002,R056,PCB. Install/Re-setup ROM Program Data,Bo mạch điều khiển
+FMSV2023090105,R057,PCB. Replace Printed Circuit Board,Bo mạch điều khiển
+FMSV2023090145,R057,PCB. Replace Printed Circuit Board,Bo mạch điều khiển
+FMSV2023090146,R057,PCB. Replace Printed Circuit Board,Bo mạch điều khiển
+FMSV2023090287,R057,PCB. Replace Printed Circuit Board,Bo mạch điều khiển
+FMSV2023120025,R077,RBS.Re-glue around Rubber for BSA,Làm lại keo
+FMSV2023090170,R077,RBS.Re-glue around Rubber for BSA,Làm lại keo
+FMSV2023080008,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023070077,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023110035,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023070056,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090237,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023120007,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023110031,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023080015,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023080062,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023080074,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023080076,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023080078,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023080097,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090013,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090049,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090079,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090093,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090099,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090105,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090108,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090113,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090118,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090120,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090121,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090123,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090128,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090131,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090145,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090170,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090176,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090179,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090185,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090189,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090194,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090195,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090198,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090199,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090210,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090211,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090223,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090225,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090231,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090232,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090234,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090235,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090239,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090240,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090247,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090254,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090258,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090269,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090276,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023090282,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023110057,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023110058,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023110069,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023120036,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023110025,R063,VCA. Replace Video Connector Assembly,Bộ phận kết nối tín hiệu
+FMSV2023110061,R064,WGA. Re-glue around Camera Head Assembly,Đầu thu hình
+FMSV2023090194,R065,WGB. Replace Light Guide Lens,Thấu kính dẫn sáng
+FMSV2023090184,R066,WGB.Re-glue around Lens,Thấu kính dẫn sáng
+FMSV2023090275,R066,WGB.Re-glue around Lens,Thấu kính dẫn sáng
+FMSV2023080016,R068,SW. Replace Switchs,Nút nhấn
+FMSV2023080076,R068,SW. Replace Switchs,Nút nhấn
+FMSV2023090195,R068,SW. Replace Switchs,Nút nhấn
+FMSV2023090241,R068,SW. Replace Switchs,Nút nhấn
+FMSV2023120048,R068,SW. Replace Switchs,Nút nhấn
+FMSV2023090150,R069,WJT.Replace Water Jet Tube with RBS ,Kênh nước phụ
+FMSV2023110048,R069,WJT.Replace Water Jet Tube with RBS ,Kênh nước phụ
+FMSV2023110050,R069,WJT.Replace Water Jet Tube with RBS ,Kênh nước phụ
+FMSV2023090185,R085,WJT. Repair/Unclog Water Jet Tube Assy,Kênh nước phụ
+FMSV2023110024,R088,ANGL. Adjustment of Lock pressure,Bộ phận điều khiển
+FMSV2023080008,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023120027,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090069,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090074,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023040070,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090059,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023100010,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023080062,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023080075,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023080100,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023080101,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023080102,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090007,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090013,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090095,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090096,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090098,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090111,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090130,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090131,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090139,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090153,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090159,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090190,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090212,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090218,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090235,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090240,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090255,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090261,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090282,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023090287,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023110013,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023120034,R089,CHA. Replace of CHA,Đầu thu hình
+FMSV2023080058,R018,DEC. Replace Distal End Cap　with　Nozzle,Nắp nhựa
+FMSV2023050072,R018,DEC. Replace Distal End Cap　with　Nozzle,Nắp nhựa
+FMSV2023090097,R018,DEC. Replace Distal End Cap　with　Nozzle,Nắp nhựa
+FMSV2023090137,R018,DEC. Replace Distal End Cap　with　Nozzle,Nắp nhựa
+FMSV2023090139,R018,DEC. Replace Distal End Cap　with　Nozzle,Nắp nhựa
+FMSV2023120032,R018,DEC. Replace Distal End Cap　with　Nozzle,Nắp nhựa
+FMSV2023110028,R018,DEC. Replace Distal End Cap　with　Nozzle,Nắp nhựa
+FMSV2023090001,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023110035,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023100003,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023110029,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023110029,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023090041,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023090102,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023090124,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023090155,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023090181,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023090238,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023090242,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023090260,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023110039,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023110021,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023110020,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023110051,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023110045,R092,CHA.Replace CHA with RBS,Đầu thu hình
+FMSV2023090236,R091,DEC.Replace Distal End Cap with NOZ/RBS,Nắp nhựa
+FMSV2024010003,R091,DEC.Replace Distal End Cap with NOZ/RBS,Nắp nhựa
+FMSV2023110034,R098,VCA.Wiring for Video Connector　,Bộ phận kết nối tín hiệu
+FMSV2023120011,R098,VCA.Wiring for Video Connector　,Bộ phận kết nối tín hiệu
+FMSV2023120006,R098,VCA.Wiring for Video Connector　,Bộ phận kết nối tín hiệu
+FMSV2023090275,R098,VCA.Wiring for Video Connector　,Bộ phận kết nối tín hiệu
+FMSV2023110030,R105,WGA/WGB.Re-glue around Lens ,Đầu thu hình
+FMSV2023120026,R105,WGA/WGB.Re-glue around Lens ,Đầu thu hình
+FMSV2023090138,R113,VCA. Replace Parts for VCA,Bộ phận kết nối tín hiệu
+FMSV2023090240,R113,VCA. Replace Parts for VCA,Bộ phận kết nối tín hiệu
+FMSV2023090240,R113,VCA. Replace Parts for VCA,Bộ phận kết nối tín hiệu
+FMSV2023090242,R113,VCA. Replace Parts for VCA,Bộ phận kết nối tín hiệu
+FMSV2023110027,R113,VCA. Replace Parts for VCA,Bộ phận kết nối tín hiệu
+FMSV2023110026,R113,VCA. Replace Parts for VCA,Bộ phận kết nối tín hiệu
+FMSV2023090013,R115,DWA.Replace Drum Wire Assembly,Dây cáp (thép)
+FMSV2023120027,R096,DEC.Replace Distal End Cap ,Nắp nhựa
+FMSV2023110029,R096,DEC.Replace Distal End Cap ,Nắp nhựa
+FMSV2023090027,R096,DEC.Replace Distal End Cap ,Nắp nhựa
+FMSV2023090173,R096,DEC.Replace Distal End Cap ,Nắp nhựa
+FMSV2023090184,R096,DEC.Replace Distal End Cap ,Nắp nhựa
+FMSV2023090260,R096,DEC.Replace Distal End Cap ,Nắp nhựa
+FMSV2023080100,R119,LGB. Replace LGB Assy with RBS,Dây dẫn sáng
+FMSV2023090110,R119,LGB. Replace LGB Assy with RBS,Dây dẫn sáng
+FMSV2023090236,R119,LGB. Replace LGB Assy with RBS,Dây dẫn sáng
+FMSV2023090242,R119,LGB. Replace LGB Assy with RBS,Dây dẫn sáng
+FMSV2023080061,R119,LGB. Replace LGB Assy with RBS,Dây dẫn sáng
+FMSV2023120036,R119,LGB. Replace LGB Assy with RBS,Dây dẫn sáng
+FMSV2023090208,R120,Replace Rubber Corn,Vỏ cao su
+FMSV2023120048,R120,Replace Rubber Corn,Vỏ cao su
+FMSV2023120009,R120,Replace Rubber Corn,Vỏ cao su
+FMSV2023100010,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023080062,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023080102,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023090095,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023090096,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023090137,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023090139,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023090182,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023090238,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023090240,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023090259,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023120019,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023110045,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023120020,R125,LGB. Replace Light Guide Bundle Assy,Dây dẫn sáng
+FMSV2023090155,R145,WJT.Replace Water Jet Tube Assembly,Kênh nước phụ
+FMSV2023090159,R145,WJT.Replace Water Jet Tube Assembly,Kênh nước phụ
+FMSV2023090220,R145,WJT.Replace Water Jet Tube Assembly,Kênh nước phụ
+FMSV2023090069,R118,FSA.Replace IG FSA with RBS,Vỏ ống luồn
+FMSV2023100003,R118,FSA.Replace IG FSA with RBS,Vỏ ống luồn
+FMSV2023070056,R118,FSA.Replace IG FSA with RBS,Vỏ ống luồn
+FMSV2023090118,R118,FSA.Replace IG FSA with RBS,Vỏ ống luồn
+FMSV2023090185,R118,FSA.Replace IG FSA with RBS,Vỏ ống luồn
+FMSV2023090232,R118,FSA.Replace IG FSA with RBS,Vỏ ống luồn
+FMSV2023090257,R118,FSA.Replace IG FSA with RBS,Vỏ ống luồn
+FMSV2023110052,R118,FSA.Replace IG FSA with RBS,Vỏ ống luồn
+FMSV2023110050,R118,FSA.Replace IG FSA with RBS,Vỏ ống luồn
+FMSV2023110034,R162,BSA.Resoldering,Bộ phận uốn cong
+FMSV2023110041,R162,BSA.Resoldering,Bộ phận uốn cong
+FMSV2023110044,R162,BSA.Resoldering,Bộ phận uốn cong
+FMSV2023110043,R162,BSA.Resoldering,Bộ phận uốn cong
+FMSV2023110042,R162,BSA.Resoldering,Bộ phận uốn cong
+FMSV2023090164,R162,BSA.Resoldering,Bộ phận uốn cong
+FMSV2023120023,R171,CHA.Celaning of CHA around Epoxy area only,Đầu thu hình
+FMSV2023060068,R171,CHA.Celaning of CHA around Epoxy area only,Đầu thu hình
+FMSV2023120035,R173,SUB.Clean of SUC Valve by Brushing for G5 OSA,Vệ sinh van hút
+FMSV2023120013,R206,O.Cleaning,Vệ sinh
+FMSV2023120045,R206,O.Cleaning,Vệ sinh
+FMSV2023120044,R206,O.Cleaning,Vệ sinh
+FMSV2023120014,R206,O.Cleaning,Vệ sinh
+FMSV2023090217,R216,PCB.Replace Patient PCB,Bo mạch điều khiển
+FMSV2023090226,R216,PCB.Replace Patient PCB,Bo mạch điều khiển
+FMSV2023110056,R216,PCB.Replace Patient PCB,Bo mạch điều khiển
+FMSV2023080002,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023090084,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023090180,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023090227,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023090250,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023030079,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023110056,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023110036,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023120033,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023120030,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023110009,R220,PCB Replace Main PCB,Bo mạch chính
+FMSV2023090215,R235,PCB. Replace Light Control PCB,Bo mạch điều khiển
+FMSV2023090080,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023090246,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023090290,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023090289,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023090163,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023090252,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023080022,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023090025,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023090228,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023090249,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023120015,R270,IRS.Replace Iris Assy,Thay thế bộ phận điều khiển ánh sáng
+FMSV2023040070,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023090099,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023090100,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023110057,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023110013,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023040070,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023090099,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023090100,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023110057,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023110013,R705,PCB.Replace POW PCB,Bo mạch điều khiển
+FMSV2023080062,R707,PCB.Replace FPGA PCB,Bo mạch điều khiển
+FMSV2023090111,R707,PCB.Replace FPGA PCB,Bo mạch điều khiển
+FMSV2023090255,R707,PCB.Replace FPGA PCB,Bo mạch điều khiển
+FMSV2023110045,R707,PCB.Replace FPGA PCB,Bo mạch điều khiển
+FMSV2023110054,R219,PCB.Replace Power Supply PCB,Bo cấp nguồn
+FMSV2023110063,R219,PCB.Replace Power Supply PCB,Bo cấp nguồn
+FMSV2023030040,R107,PCB.Adjustment,Cài đặt phần mềm
+FMSV2023110054,R299,Replace DDC PCB,Bo nguồn cách ly
+FMSV2023110063,R299,Replace DDC PCB,Bo nguồn cách ly
+FMSV2023100011,R768,FSB. LG flexible section Coat Patching,Bộ phận ống dẫn của ống soi
+FMSV2023090166,R768,FSB. LG flexible section Coat Patching,Bộ phận ống dẫn của ống soi
+FMSV2023090195,R768,FSB. LG flexible section Coat Patching,Bộ phận ống dẫn của ống soi
+FMSV2023090259,R768,FSB. LG flexible section Coat Patching,Bộ phận ống dẫn của ống soi
+FMSV2023090063,R775,FSB. Replace FSB Assy,Vỏ ống luồn (FSB)
+FMSV2023090254,R775,FSB. Replace FSB Assy,Vỏ ống luồn (FSB)
+FMSV2023090276,R775,FSB. Replace FSB Assy,Vỏ ống luồn (FSB)
+FMSV2023090249,R272,PCB.Replace PS Board,Bo mạch
+FMSV2023060047,R708,PCB.Replace MCU PCB,Bo mạch
+FMSV2023090171,R767,WGA. Polishing Image lens (CHA),Vệ sinh đầu thu hình (CHA)
+FMSV2023090103,R006,AWB.Replace O-Ring/One Way Valve,Vòng cao su
+FMSV2023090154,R006,AWB.Replace O-Ring/One Way Valve,Vòng cao su
+FMSV2023110031,,,
+FMSV2023080018,,,
+FMSV2023080062,,,
+FMSV2023080069,,,
+FMSV2023080101,,,
+FMSV2023080102,,,
+FMSV2023090007,,,
+FMSV2023120034,,,

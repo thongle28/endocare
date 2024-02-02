@@ -721,6 +721,8 @@ class technical_report():
 			tp.pictures.add(os.path.join(path,signatures_folder,'Minh.png'),name = 'Minh',top = tp.range('G44').offset(1,0).top+7,left = tp.range('J44').offset(1,0).left-20)
 		elif tp.range('I50').value == 'Lê Quang Thông':
 			tp.pictures.add(os.path.join(path,signatures_folder,'Thong.png'),name = 'Thong',top = tp.range('G44').offset(1,0).top+7,left = tp.range('J44').offset(1,0).left-20)
+		elif tp.range('I50').value == 'Huỳnh Trung Nguyên':
+			tp.pictures.add(os.path.join(path,signatures_folder,'TrungNguyen.png'),name = 'TrungNguyen',top = tp.range('G44').offset(1,0).top+7,left = tp.range('I44').offset(1,0).left-5)
 		elif tp.range('I50').value == 'Huỳnh Minh Hoàng':
 			tp.pictures.add(os.path.join(path,signatures_folder,'Thang.png'),name = 'Hoang',top = tp.range('G44').offset(1,0).top+7,left = tp.range('J44').offset(1,0).left-20)
 		elif tp.range('I50').value == 'Nguyễn Thái Nguyên':

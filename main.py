@@ -1,9 +1,11 @@
 import sources.logins as lg
 import sources.databases as db
 import sources.reports as rp
-import sources.new_web as nw
+import sources.new_web_231125 as nw
 import sources.update_ml as uml
-import os
+import sources.qr_code as qrc
+
+import os,sys
 import pathlib
 import shutil
 from time import sleep
@@ -27,15 +29,12 @@ class chel():
 					'Update Master List',
 					'Quotation',
 					'GDKT/Trouble Report',
+
 					'Weekly Report',
 					'Run SQL',
+					'Print QR Code',
 					'Exit',
 		]
-
-		# can not change order
-		# self.menu_list.sort()
-
-
 
 
 	def menu(self): #return index
@@ -78,10 +77,10 @@ class chel():
 						if conn:
 							pass
 					except:
-						conn = connect('history.db')
+						conn = connect('quotation.db')
 						print('Auto connect to history.db')
 					run_all = nw.data_process(conn)
-					run_all.rma_list()
+					# run_all.rma_list()
 					run_all.exfm_web()
 					run_all.pending_file()
 					run_all.parts_name()
@@ -155,6 +154,12 @@ class chel():
 				swr.export()
 			except Exception as e:
 				print(e,'\nSelect Database (Step 2 first)')
+
+		elif function == 'Print QR Code':
+			# try:
+			abba = qrc.main(folder_name='images',wb_name = 'templates/QR Template.xlsx')
+			abba.write_template()
+
 
 		elif function == menu_list[-1]:
 			pass
@@ -261,7 +266,9 @@ class functions():
 
 if __name__ == "__main__":
 	global conn, driver,db_name,ver,uname
-	ver = '2.1.1'
+# pyinstaller -i neverstop.ico -n Endocare --onefile main.py
+
+	ver = '3.1.2'
 	db_name =''
 	uname =''
 
@@ -287,12 +294,12 @@ if __name__ == "__main__":
 				
 			elif name == 'Exit': 
 				print('Thank you!!! End of Game.')
-				sleep(3)
+				sleep(1)
 				break
 			
 			else:
 				chel().processing(name)
 		
-
+	sys.exit()
 
 

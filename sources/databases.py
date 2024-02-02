@@ -18,8 +18,9 @@ class databases():
 							'Customers',
 							'All',
 			]
-		# if uname != 'Le Quang Thong':
-		# 	self.update_type = ['ExFM',]
+		if uname not in ('Le Quang Thong','Admin'):
+
+			self.update_type = ['ExFM',]
 		
 			
 		self.uname = uname	
@@ -120,7 +121,11 @@ class databases():
 					(df['R-Code']).to_sql('repair_code',conn,index=False,if_exists='replace')
 					(df['Parts']).to_sql('parts',conn,index=False,if_exists='replace')
 					print(f'\nConsolidated file stored in {db_name}')
+				except Exception as e:
+					print(f'can not find file {con} and import as consolidated')
+					print(e)
 
+				try:
 					# google sheet
 					spreadsheetId = '1bT4W0CiLVD_B_ddRcVkS3MEXbSjvmGb4'
 					url = "https://docs.google.com/spreadsheets/export?exportFormat=xlsx&id=" + spreadsheetId
@@ -132,7 +137,7 @@ class databases():
 						values.to_sql(name,conn,index=False,if_exists='replace')
 					print(f'\nDatabase file stored in {db_name}')
 				except Exception as e:
-					print(f'can not find file {con} and import as consolidated')
+					print(f'can not connect with Google Sheet')
 					print(e)
 
 			if 'Master List' in u_type:
@@ -140,26 +145,13 @@ class databases():
 				filename = lg.file_select(folder_name='files',end_with='.xlsm')
 				try:
 					# m_list
-					m_list = pd.read_excel(filename,sheet_name='1.MasterPendingList',skiprows=range(1,3))
+					m_list = pd.read_excel(filename,sheet_name='Master List',skiprows=range(1,2))
 					new_header = m_list.iloc[0] #grab the first row for the header
 					m_list = m_list[1:] #take the data less the header row
 					m_list.columns = new_header
 
-					#completed
-					completed = pd.read_excel(filename,sheet_name='2. Completed',skiprows=range(1,1))
-					new_header = completed.iloc[0] #grab the first row for the header
-					completed = completed[1:] #take the data less the header row
-					completed.columns = new_header
-
-					#transfer
-					transfer = pd.read_excel(filename,sheet_name='3. Transfer to sales',skiprows=range(1,1))
-					new_header = transfer.iloc[0] #grab the first row for the header
-					transfer = transfer[1:] #take the data less the header row
-					transfer.columns = new_header
-
+					
 					m_list.to_sql('new_ml',conn,index=False,if_exists='replace')
-					completed.to_sql('completed',conn,index=False,if_exists='replace')
-					transfer.to_sql('transfers',conn,index=False,if_exists='replace')
 				except Exception as e:
 					print(e)
 
@@ -194,30 +186,16 @@ class databases():
 				filename = lg.file_select(folder_name='files',end_with='.xlsm')
 				try:
 					# m_list
-					m_list = pd.read_excel(filename,sheet_name='1.MasterPendingList',skiprows=range(1,3))
+					m_list = pd.read_excel(filename,sheet_name='Master List',skiprows=range(1,2))
 					new_header = m_list.iloc[0] #grab the first row for the header
 					m_list = m_list[1:] #take the data less the header row
 					m_list.columns = new_header
 
-					#completed
-					completed = pd.read_excel(filename,sheet_name='2. Completed',skiprows=range(1,1))
-					new_header = completed.iloc[0] #grab the first row for the header
-					completed = completed[1:] #take the data less the header row
-					completed.columns = new_header
-
-					#transfer
-					transfer = pd.read_excel(filename,sheet_name='3. Transfer to sales',skiprows=range(1,1))
-					new_header = transfer.iloc[0] #grab the first row for the header
-					transfer = transfer[1:] #take the data less the header row
-					transfer.columns = new_header
-
+					
 					m_list.to_sql('new_ml',conn,index=False,if_exists='replace')
-					completed.to_sql('completed',conn,index=False,if_exists='replace')
-					transfer.to_sql('transfers',conn,index=False,if_exists='replace')
 				except Exception as e:
 					print(e)
-
-			
+					
 			if 'Google Sheet Data' in u_type:
 				# try:
 				spreadsheetId = '1bT4W0CiLVD_B_ddRcVkS3MEXbSjvmGb4'
